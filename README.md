@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+# Library Management System
+A platform independent stand-alone application written in java. It has the following features:
 
-You can use the [editor on GitHub](https://github.com/Akshay-Kumar/Library-Management-System/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+ * Admin tasks: add book,remove book, search for defaulters, calculate fines for the deafulters, etc.
+ * Usre tasks: book search, borrow book, look for availability of a book.
+ * supports running on multiple platform windows, mac, linux, etc.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Getting it Setup
+After you get a copy of this codebase pulled down locally (either downloaded as a zip or git cloned), you'll need to set up the system dsn:
 
-### Markdown
+Look for the database file library.mdb.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Then you'll need to open ODBC Data source Administrator(32/64-bit):
 
-```markdown
-Syntax highlighted code block
+1. Under User DSN add a new MS Access Database then select a drive from the options with title Microsoft Access Driver(*.mdb)
+2. Now click finish and you will see a pop up with title ODBC Micrososft access setup
+3. Click the select button and navigate to the library.mdb file from the project repository and select it.
+4. Click ok and finish the set-up.
+5. Now you are good to go.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Akshay-Kumar/Library-Management-System/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## How it Works
+Just double click on the library.jar to launch the application. Add the user and passwords by modifying the database file library.mdb.
+Password for the file is "akshay".
